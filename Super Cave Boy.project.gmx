@@ -13,6 +13,7 @@
       <sprite>sprites\spr_player_walk</sprite>
       <sprite>sprites\spr_player_exit</sprite>
       <sprite>sprites\spr_player_jump</sprite>
+      <sprite>sprites\spr_player_mask</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
