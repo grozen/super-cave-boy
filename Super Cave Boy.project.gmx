@@ -23,6 +23,9 @@
       <object>objects\Player</object>
     </objects>
   </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_one</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
