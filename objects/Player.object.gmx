@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// I'm a little comment, short and stout
+            <string>/// Initialize the player object
+spd = 4;
 </string>
           </argument>
         </arguments>
