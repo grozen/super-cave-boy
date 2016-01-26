@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>/// Initialize the player object
 spd = 4;
+hspd = 0;
+vspd = 0;
 </string>
           </argument>
         </arguments>
@@ -55,21 +57,54 @@ var left = keyboard_check(vk_left);
 var up = keyboard_check(vk_up);
 var down = keyboard_check(vk_down);
 
+// Set speeds
+
 if (right) {
-  x += spd;
+  hspd = spd;
 }
 
 if (left) {
-  x -= spd;
+  hspd = -spd;
 }
 
 if (up) {
-  y -= spd;
+  vspd = -spd;
 }
 
 if (down) {
-  y += spd;
+  vspd = spd;
 }
+
+if (!right &amp;&amp; !left) {
+  hspd = 0;
+}
+
+if (!up &amp;&amp; !down) {
+  vspd = 0;
+}
+
+// Horizontal collisions
+if (place_meeting(x + hspd, y, Solid)) {
+  for (; hspd != 0; hspd -= sign(hspd)) {
+    if !place_meeting(x + hspd, y, Solid) {
+      break;
+    }
+  }
+}
+
+x += hspd;
+
+// Vertical collisions
+if (place_meeting(x, y + vspd, Solid)) {
+  for (; vspd != 0; vspd -= sign(vspd)) {
+    if !place_meeting(x, y + vspd, Solid) {
+      break;
+    }
+  }
+}
+
+y += vspd;
+
 </string>
           </argument>
         </arguments>
