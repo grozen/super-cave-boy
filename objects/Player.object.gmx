@@ -89,28 +89,7 @@ if (!right &amp;&amp; !left) {
   hspd = 0;
 }
 
-// Horizontal collisions
-if (place_meeting(x + hspd, y, Solid)) {
-  for (; hspd != 0; hspd -= sign(hspd)) {
-    if !place_meeting(x + hspd, y, Solid) {
-      break;
-    }
-  }
-}
-
-x += hspd;
-
-// Vertical collisions
-if (place_meeting(x, y + vspd, Solid)) {
-  for (; vspd != 0; vspd -= sign(vspd)) {
-    if !place_meeting(x, y + vspd, Solid) {
-      break;
-    }
-  }
-}
-
-y += vspd;
-
+move(Solid);
 </string>
           </argument>
         </arguments>
