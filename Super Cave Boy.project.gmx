@@ -26,6 +26,9 @@
     <scripts name="Helper Scripts">
       <script>scripts\move.gml</script>
     </scripts>
+    <scripts name="Player States">
+      <script>scripts\move_state.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">
