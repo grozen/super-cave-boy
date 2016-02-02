@@ -24,10 +24,12 @@ else { // We're on the ground
 
 if (right) {
   hspd = spd;
+  image_xscale = 1;
 }
 
 if (left) {
   hspd = -spd;
+  image_xscale = -1;
 }
 
 // "Friction"
@@ -36,3 +38,25 @@ if (!right && !left) {
 }
 
 move(Solid);
+
+// Check for a grabbable ledge
+var falling = y - yprevious > 0;
+var wasnt_wall = !position_meeting(x + (17 * image_xscale), yprevious, Solid);
+var is_wall = position_meeting(x + (17 * image_xscale), y, Solid);
+
+if (falling && wasnt_wall && is_wall) {
+  hspd = 0;
+  vspd = 0;
+
+  // Move over to the ledge horizontally
+  while(!place_meeting(x + image_xscale, y, Solid)) {
+    x += image_xscale;
+  }
+
+  // Move to the ledge's edge vertically
+  while(position_meeting(x + (17 * image_xscale), y - 1, Solid)) {
+    y -= 1;
+  }
+
+  state = ledge_grab_state;
+}

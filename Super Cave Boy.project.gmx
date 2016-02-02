@@ -28,6 +28,7 @@
     </scripts>
     <scripts name="Player States">
       <script>scripts\move_state.gml</script>
+      <script>scripts\ledge_grab_state.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
