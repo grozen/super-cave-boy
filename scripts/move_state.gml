@@ -35,19 +35,19 @@ else { // We're on the ground
   }
 }
 
-if (right) {
-  hspd = spd;
-  image_xscale = 1;
+if (right || left) {
+  var dir = (right - left);
+  hspd += dir * acc;
+  if (dir != 0) {
+    image_xscale = dir;
+  }
+  
+  if (abs(hspd) > spd) {
+    hspd = spd * dir;
+  }
 }
-
-if (left) {
-  hspd = -spd;
-  image_xscale = -1;
-}
-
-// "Friction"
-if (!right && !left) {
-  hspd = 0;
+else {
+  apply_friction(acc);
 }
 
 move(Solid);
