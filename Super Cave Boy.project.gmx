@@ -38,6 +38,10 @@
       <script>scripts\move_state.gml</script>
       <script>scripts\ledge_grab_state.gml</script>
     </scripts>
+    <scripts name="Snake States">
+      <script>scripts\snake_move_right_state.gml</script>
+      <script>scripts\snake_move_left_state.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">
@@ -46,6 +50,9 @@
     <objects name="Level">
       <object>objects\Solid</object>
       <object>objects\Dirt</object>
+    </objects>
+    <objects name="Enemies">
+      <object>objects\Snake</object>
     </objects>
   </objects>
   <rooms name="rooms">
