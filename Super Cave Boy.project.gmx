@@ -19,6 +19,13 @@
       <sprite>sprites\spr_solid</sprite>
       <sprite>sprites\spr_dirt</sprite>
     </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\spr_snake</sprite>
+      <sprite>sprites\spr_bat_fly</sprite>
+      <sprite>sprites\spr_bat_idle</sprite>
+      <sprite>sprites\spr_spider</sprite>
+      <sprite>sprites\spr_enemy_mask</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
