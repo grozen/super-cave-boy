@@ -42,6 +42,10 @@
       <script>scripts\snake_move_right_state.gml</script>
       <script>scripts\snake_move_left_state.gml</script>
     </scripts>
+    <scripts name="Bat States">
+      <script>scripts\bat_idle_state.gml</script>
+      <script>scripts\bat_chase_state.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">
@@ -53,6 +57,7 @@
     </objects>
     <objects name="Enemies">
       <object>objects\Snake</object>
+      <object>objects\Bat</object>
     </objects>
   </objects>
   <rooms name="rooms">
