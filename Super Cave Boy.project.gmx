@@ -32,6 +32,7 @@
   <scripts name="scripts">
     <scripts name="Helper Scripts">
       <script>scripts\move.gml</script>
+      <script>scripts\horizontal_move_bounce.gml</script>
       <script>scripts\apply_friction.gml</script>
     </scripts>
     <scripts name="Player States">
@@ -46,6 +47,11 @@
       <script>scripts\bat_idle_state.gml</script>
       <script>scripts\bat_chase_state.gml</script>
     </scripts>
+    <scripts name="Spider States">
+      <script>scripts\spider_idle_state.gml</script>
+      <script>scripts\spider_jump_state.gml</script>
+      <script>scripts\spider_tired_state.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="Player">
@@ -58,6 +64,7 @@
     <objects name="Enemies">
       <object>objects\Snake</object>
       <object>objects\Bat</object>
+      <object>objects\Spider</object>
     </objects>
   </objects>
   <rooms name="rooms">
