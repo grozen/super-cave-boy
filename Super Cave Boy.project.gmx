@@ -26,6 +26,9 @@
       <sprite>sprites\spr_spider</sprite>
       <sprite>sprites\spr_enemy_mask</sprite>
     </sprites>
+    <sprites name="GUI">
+      <sprite>sprites\spr_heart</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -56,6 +59,7 @@
   <objects name="objects">
     <objects name="Player">
       <object>objects\Player</object>
+      <object>objects\PlayerStats</object>
     </objects>
     <objects name="Level">
       <object>objects\Solid</object>
