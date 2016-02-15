@@ -31,6 +31,7 @@ acc = 2;
 hspd = 0;
 vspd = 0;
 grav = 1.5;
+jumpspd = 16;
 
 state = move_state;
 </string>
@@ -56,6 +57,53 @@ state = move_state;
           <argument>
             <kind>1</kind>
             <string>script_execute(state);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="EnemyBase">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Colliding with an enemy
+
+var above_enemy = y - vspd &lt; other.y;
+var falling = vspd &gt; 0;
+
+if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) { // Enemy needs to die
+  // Move just above enemy
+  y = other.bbox_top - sprite_yoffset - 1;
+
+  with(other) {
+    instance_destroy();
+  }
+  
+  vspd = -(jumpspd / 1.5); // Bounce off the enemy
+}
+else {
+  // Player takes damage
+  if (state != hurt_state) {
+    state = hurt_state;
+    
+    if (instance_exists(PlayerStats)) {
+      PlayerStats.hp -= 1;
+    }
+  }
+}
 </string>
           </argument>
         </arguments>

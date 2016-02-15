@@ -23,7 +23,7 @@ else { // We're on the ground
 
   // Handle jumping
   if (up) {
-    vspd = -16;
+    vspd = -jumpspd;
   }
 
   if (hspd == 0) {

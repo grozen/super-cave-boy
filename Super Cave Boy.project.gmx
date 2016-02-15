@@ -41,6 +41,7 @@
     <scripts name="Player States">
       <script>scripts\move_state.gml</script>
       <script>scripts\ledge_grab_state.gml</script>
+      <script>scripts\hurt_state.gml</script>
     </scripts>
     <scripts name="Snake States">
       <script>scripts\snake_move_right_state.gml</script>
@@ -66,6 +67,7 @@
       <object>objects\Dirt</object>
     </objects>
     <objects name="Enemies">
+      <object>objects\EnemyBase</object>
       <object>objects\Snake</object>
       <object>objects\Bat</object>
       <object>objects\Spider</object>
