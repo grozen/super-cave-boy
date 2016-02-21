@@ -1,7 +1,8 @@
-///horizontal_move_bounce(collision_object)
+///direction_move_bounce(collision_object)
 
 var collision_object = argument0;
 var original_hspd = hspd;
+var original_vspd = vspd;
 
 /// horizontal_move_bounce()
 
@@ -24,6 +25,11 @@ x += hspd;
 if (place_meeting(x, y + vspd, collision_object)) {
   for (; vspd != 0; vspd -= sign(vspd)) {
     if !place_meeting(x, y + vspd, collision_object) {
+      var bounce_vspd = -(original_vspd / 2);
+    
+      if (abs(bounce_vspd) > 1 && !place_meeting(x, y + bounce_vspd, collision_object)) {
+        vspd = bounce_vspd
+      }
       break;
     }
   }

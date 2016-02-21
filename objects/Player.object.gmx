@@ -97,7 +97,13 @@ if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) { // Enemy nee
 else {
   // Player takes damage
   if (state != hurt_state) {
+    image_blend = make_colour_rgb(220, 150, 150);
+    vspd = -12;
+    hspd = sign(x - other.x) * 10;
+    
     state = hurt_state;
+    
+    move(Solid);
     
     if (instance_exists(PlayerStats)) {
       PlayerStats.hp -= 1;
