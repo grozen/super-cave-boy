@@ -29,6 +29,9 @@
     <sprites name="GUI">
       <sprite>sprites\spr_heart</sprite>
     </sprites>
+    <sprites name="Effects">
+      <sprite>sprites\spr_blood</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -72,6 +75,9 @@
       <object>objects\Snake</object>
       <object>objects\Bat</object>
       <object>objects\Spider</object>
+    </objects>
+    <objects name="Effects">
+      <object>objects\Blood</object>
     </objects>
   </objects>
   <rooms name="rooms">
