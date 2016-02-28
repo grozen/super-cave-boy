@@ -20,6 +20,8 @@
       <sprite>sprites\spr_dirt</sprite>
       <sprite>sprites\spr_entrance</sprite>
       <sprite>sprites\spr_exit</sprite>
+      <sprite>sprites\spr_dirt_top</sprite>
+      <sprite>sprites\spr_dirt_edge</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_snake</sprite>

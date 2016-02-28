@@ -64,36 +64,6 @@ script_execute(state);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="Exit">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/// Allow player to leave the room
-
-var up = keyboard_check(vk_up);
-
-if (up) {
-  y = yprevious; // Avoid the initial jump attempt
-  state = exit_state;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="EnemyBase">
       <action>
         <libid>1</libid>
@@ -141,6 +111,36 @@ else {
       PlayerStats.hp -= 1;
     }
   }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="Exit">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Allow player to leave the room
+
+var up = keyboard_check(vk_up);
+
+if (up) {
+  y = yprevious; // Avoid the initial jump attempt
+  state = exit_state;
 }
 </string>
           </argument>
