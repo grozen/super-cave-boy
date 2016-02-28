@@ -174,7 +174,6 @@
     <instance objName="Dirt" x="480" y="160" name="inst_60DF3021" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="512" y="160" name="inst_F6B3BE2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Snake" x="256" y="304" name="inst_1CDDD807" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="PlayerStats" x="32" y="16" name="inst_E9358A94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="64" y="192" name="inst_33473D37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Entrance" x="38" y="144" name="inst_6B4CDE8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Exit" x="488" y="112" name="inst_30BEFAFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
