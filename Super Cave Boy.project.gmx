@@ -93,6 +93,9 @@
   <rooms name="rooms">
     <room>rooms\rm_one</room>
     <room>rooms\rm_two</room>
+    <room>rooms\rm_three</room>
+    <room>rooms\rm_four</room>
+    <room>rooms\rm_five</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
