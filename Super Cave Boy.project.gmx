@@ -47,6 +47,7 @@
       <script>scripts\direction_move_bounce.gml</script>
       <script>scripts\horizontal_move_bounce.gml</script>
       <script>scripts\apply_friction.gml</script>
+      <script>scripts\get_input.gml</script>
     </scripts>
     <scripts name="Player States">
       <script>scripts\move_state.gml</script>

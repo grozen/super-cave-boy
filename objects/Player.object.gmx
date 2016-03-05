@@ -58,6 +58,8 @@ state = move_state;
             <kind>1</kind>
             <string>/// Act according to your state
 
+get_input();
+
 script_execute(state);
 </string>
           </argument>
@@ -135,9 +137,6 @@ else {
           <argument>
             <kind>1</kind>
             <string>/// Allow player to leave the room
-
-var up = keyboard_check(vk_up);
-
 if (up) {
   y = yprevious; // Avoid the initial jump attempt
   state = exit_state;
