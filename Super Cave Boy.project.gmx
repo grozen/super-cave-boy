@@ -13,6 +13,7 @@
     <sound>sound\snd_step</sound>
     <sound>sound\snd_tink</sound>
     <sound>sound\snd_bat</sound>
+    <sound>sound\snd_music</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
