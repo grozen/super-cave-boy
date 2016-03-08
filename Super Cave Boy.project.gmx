@@ -4,7 +4,16 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_exit</sound>
+    <sound>sound\snd_jump</sound>
+    <sound>sound\snd_ouch</sound>
+    <sound>sound\snd_snake</sound>
+    <sound>sound\snd_spider</sound>
+    <sound>sound\snd_step</sound>
+    <sound>sound\snd_tink</sound>
+    <sound>sound\snd_bat</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\spr_player_idle</sprite>
