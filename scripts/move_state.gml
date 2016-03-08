@@ -19,6 +19,7 @@ else { // We're on the ground
   // Handle jumping
   if (up) {
     vspd = -jumpspd;
+    audio_play_sound(snd_jump, 5, false);
   }
 
   if (hspd == 0) {

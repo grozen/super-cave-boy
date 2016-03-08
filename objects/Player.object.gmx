@@ -97,6 +97,8 @@ if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) { // Enemy nee
   }
   
   vspd = -(jumpspd / 1.5); // Bounce off the enemy
+  
+  audio_play_sound(snd_step, 6, false); // The sound of death
 }
 else {
   // Player takes damage
@@ -140,6 +142,8 @@ else {
 if (up) {
   y = yprevious; // Avoid the initial jump attempt
   state = exit_state;
+  audio_stop_sound(snd_jump);
+  audio_play_sound(snd_exit, 4, false);
 }
 </string>
           </argument>
