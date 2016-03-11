@@ -90,6 +90,7 @@
       <object>objects\Entrance</object>
       <object>objects\Exit</object>
       <object>objects\Background</object>
+      <object>objects\Music</object>
     </objects>
     <objects name="Enemies">
       <object>objects\EnemyBase</object>
