@@ -49,6 +49,7 @@
   </sprites>
   <backgrounds name="background">
     <background>background\bg_dirt</background>
+    <background>background\bg_menu</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -91,6 +92,7 @@
       <object>objects\Exit</object>
       <object>objects\Background</object>
       <object>objects\Music</object>
+      <object>objects\Menu</object>
     </objects>
     <objects name="Enemies">
       <object>objects\EnemyBase</object>
@@ -103,6 +105,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_one</room>
     <room>rooms\rm_two</room>
     <room>rooms\rm_three</room>
