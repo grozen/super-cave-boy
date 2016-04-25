@@ -80,6 +80,10 @@
       <script>scripts\spider_tired_state.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_title</font>
+    <font>fonts\fnt_start</font>
+  </fonts>
   <objects name="objects">
     <objects name="Player">
       <object>objects\Player</object>

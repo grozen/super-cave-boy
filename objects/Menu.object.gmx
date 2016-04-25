@@ -8,6 +8,33 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>    get_input();
+    
+    if (start) {
+        room_goto(rm_one);
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -26,7 +53,21 @@
           <argument>
             <kind>1</kind>
             <string>    draw_set_halign(fa_center);
-    draw_text_colour(room_width / 2, 64, "Super Cave#Boy", c_white, c_white, c_white, c_white, 1);
+    draw_set_font(fnt_title);
+    draw_text_colour(room_width / 2 + 2, 32 + 4, "Super Cave#Boy", c_black, c_black, c_black, c_black, 1);
+    draw_text_colour(room_width / 2, 32, "Super Cave#Boy", c_white, c_white, c_white, c_white, 1);
+    
+    var start_message;
+    if (gamepad_present) {
+        start_message = "Press [start] to play";
+    }
+    else {
+        start_message = "Press [space] to play";
+    }
+    
+    draw_set_font(fnt_start);
+    draw_text_colour(room_width / 2 + 2, room_height - 40, start_message, c_black, c_black, c_black, c_black, 1);
+    draw_text_colour(room_width / 2, room_height - 44, start_message, c_white, c_white, c_white, c_white, 1);
 </string>
           </argument>
         </arguments>

@@ -25,17 +25,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Initialize the player object
-spd = 8;
-acc = 2;
-hspd = 0;
-vspd = 0;
-grav = 1.5;
-jumpspd = 16;
+            <string>    /// Initialize the player object
+    spd = 8;
+    acc = 2;
+    hspd = 0;
+    vspd = 0;
+    grav = 1.5;
+    jumpspd = 16;
 
-state = move_state;
+    state = move_state;
 
-audio_em = audio_emitter_create();
+    audio_em = audio_emitter_create();
 </string>
           </argument>
         </arguments>
@@ -58,11 +58,11 @@ audio_em = audio_emitter_create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Act according to your state
+            <string>    /// Act according to your state
 
-get_input();
+    get_input();
 
-script_execute(state);
+    script_execute(state);
 </string>
           </argument>
         </arguments>
@@ -85,43 +85,43 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Colliding with an enemy
+            <string>    /// Colliding with an enemy
 
-var above_enemy = y - vspd &lt; other.y;
-var falling = vspd &gt; 0;
+    var above_enemy = y - vspd &lt; other.y;
+    var falling = vspd &gt; 0;
 
-if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) { // Enemy needs to die
-  // Move just above enemy
-  y = other.bbox_top - sprite_yoffset - 1;
+    if (above_enemy &amp;&amp; (falling || state = ledge_grab_state)) { // Enemy needs to die
+        // Move just above enemy
+        y = other.bbox_top - sprite_yoffset - 1;
 
-  with(other) {
-    instance_destroy();
-  }
-  
-  vspd = -(jumpspd / 1.5); // Bounce off the enemy
-  
-  audio_play_sound(snd_step, 6, false); // The sound of death
-}
-else {
-  // Player takes damage
-  if (state != hurt_state) {
-    audio_emitter_pitch(audio_em, 1.6);
-    audio_emitter_gain(audio_em, 1.4);
-    audio_play_sound_on(audio_em, snd_ouch, false, 8);
-    
-    image_blend = make_colour_rgb(220, 150, 150);
-    vspd = -12;
-    hspd = sign(x - other.x) * 10;
-    
-    state = hurt_state;
-    
-    move(Solid);
-    
-    if (instance_exists(PlayerStats)) {
-      PlayerStats.hp -= 1;
+        with(other) {
+            instance_destroy();
+        }
+        
+        vspd = -(jumpspd / 1.5); // Bounce off the enemy
+        
+        audio_play_sound(snd_step, 6, false); // The sound of death
     }
-  }
-}
+    else {
+        // Player takes damage
+        if (state != hurt_state) {
+            audio_emitter_pitch(audio_em, 1.6);
+            audio_emitter_gain(audio_em, 1.4);
+            audio_play_sound_on(audio_em, snd_ouch, false, 8);
+            
+            image_blend = make_colour_rgb(220, 150, 150);
+            vspd = -12;
+            hspd = sign(x - other.x) * 10;
+            
+            state = hurt_state;
+            
+            move(Solid);
+            
+            if (instance_exists(PlayerStats)) {
+                PlayerStats.hp -= 1;
+            }
+        }
+    }
 </string>
           </argument>
         </arguments>
@@ -144,13 +144,13 @@ else {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Allow player to leave the room
-if (up) {
-  y = yprevious; // Avoid the initial jump attempt
-  state = exit_state;
-  audio_stop_sound(snd_jump);
-  audio_play_sound(snd_exit, 4, false);
-}
+            <string>    /// Allow player to leave the room
+    if (up) {
+        y = yprevious; // Avoid the initial jump attempt
+        state = exit_state;
+        audio_stop_sound(snd_jump);
+        audio_play_sound(snd_exit, 4, false);
+    }
 </string>
           </argument>
         </arguments>
