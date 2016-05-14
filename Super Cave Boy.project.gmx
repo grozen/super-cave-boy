@@ -32,6 +32,7 @@
       <sprite>sprites\spr_exit</sprite>
       <sprite>sprites\spr_dirt_top</sprite>
       <sprite>sprites\spr_dirt_edge</sprite>
+      <sprite>sprites\spr_sprite</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\spr_snake</sprite>
@@ -42,9 +43,11 @@
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\spr_heart</sprite>
+      <sprite>sprites\spr_sapphire_gui</sprite>
     </sprites>
     <sprites name="Effects">
       <sprite>sprites\spr_blood</sprite>
+      <sprite>sprites\spr_sapphire_chunk</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -97,6 +100,7 @@
       <object>objects\Background</object>
       <object>objects\Music</object>
       <object>objects\Menu</object>
+      <object>objects\Sapphire</object>
     </objects>
     <objects name="Enemies">
       <object>objects\EnemyBase</object>
@@ -106,6 +110,7 @@
     </objects>
     <objects name="Effects">
       <object>objects\Blood</object>
+      <object>objects\SapphireChunk</object>
     </objects>
   </objects>
   <rooms name="rooms">
