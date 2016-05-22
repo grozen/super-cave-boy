@@ -88,6 +88,31 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>    if (room = rm_highscore) { // Stop counting the time in the highscore room
+        alarm_set(0, -1);
+    }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
@@ -106,7 +131,7 @@
           <argument>
             <kind>1</kind>
             <string>    // Draw the player's stats
-    if (room == rm_menu) { // Unless it's the menu room
+    if (room == rm_menu || room == rm_highscore) { // Unless it's the menu/highscore rooms
         exit;
     }
     // Draw heart containers
@@ -130,6 +155,30 @@
     
     // Draw the timer
     draw_text_colour(view_wview[0] / 2, 8, string(time), c_white, c_white, c_white, c_white, 1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>    /// End the game
+    game_end();
 </string>
           </argument>
         </arguments>

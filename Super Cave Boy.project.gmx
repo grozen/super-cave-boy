@@ -100,6 +100,7 @@
       <object>objects\Background</object>
       <object>objects\Music</object>
       <object>objects\Menu</object>
+      <object>objects\HighScore</object>
       <object>objects\Sapphire</object>
     </objects>
     <objects name="Enemies">
@@ -115,6 +116,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_menu</room>
+    <room>rooms\rm_highscore</room>
     <room>rooms\rm_one</room>
     <room>rooms\rm_two</room>
     <room>rooms\rm_three</room>
