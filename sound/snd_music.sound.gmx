@@ -20,7 +20,7 @@
   <bitDepths>
     <bitDepth>16</bitDepth>
   </bitDepths>
-  <preload>-1</preload>
+  <preload>0</preload>
   <data>snd_music.mp3</data>
   <compressed>1</compressed>
   <streamed>1</streamed>
