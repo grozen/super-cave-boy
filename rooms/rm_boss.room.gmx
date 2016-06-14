@@ -147,10 +147,10 @@
     <instance objName="Dirt" x="480" y="288" name="inst_036D60AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="448" y="288" name="inst_9EB70A5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="416" y="288" name="inst_14036731" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Entrance" x="38" y="240" name="inst_44266963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Entrance" x="40" y="240" name="inst_44266963" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Background" x="72" y="42" name="inst_E223F418" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Dirt" x="224" y="288" name="inst_2B828967" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Boss" x="576" y="288" name="inst_A63465AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Boss" x="560" y="240" name="inst_A63465AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="128" y="192" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_451C824D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

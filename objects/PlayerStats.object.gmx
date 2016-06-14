@@ -57,7 +57,7 @@
           <argument>
             <kind>1</kind>
             <string>    time += 1;
-    alarm_set(0, room_speed);
+    alarm[0] = room_speed;
 </string>
           </argument>
         </arguments>
@@ -81,7 +81,7 @@
           <argument>
             <kind>1</kind>
             <string>    if (room = rm_menu) {
-        alarm_set(0, room_speed);
+        alarm[0] = room_speed;
     }
 </string>
           </argument>
@@ -106,7 +106,7 @@
           <argument>
             <kind>1</kind>
             <string>    if (room = rm_highscore) { // Stop counting the time in the highscore room
-        alarm_set(0, -1);
+        alarm[0] = -1;
     }
 </string>
           </argument>
