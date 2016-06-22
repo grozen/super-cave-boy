@@ -184,6 +184,9 @@
     <instance objName="Dirt" x="416" y="288" name="inst_FF9177BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Bat" x="320" y="208" name="inst_DC8EDA4B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Sapphire" x="320" y="272" name="inst_2E1753EF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Lava" x="192" y="288" name="inst_AAB58057" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Lava" x="224" y="288" name="inst_DF33183F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Dirt" x="256" y="288" name="inst_6C9EF886" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="" x="128" y="192" w="16" h="16" xo="0" yo="0" id="10000001" name="inst_451C824D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
