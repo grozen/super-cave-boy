@@ -84,13 +84,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    script_execute(state);
+            <string>script_execute(state);
+
+// Draw the boss red if it's in the lava
+if (place_meeting(x, y, Lava)) {
+  image_blend = c_red;
+}
+else {
+  image_blend = c_white;
+}
+
+// Possibly die
+if (hp &lt;= 0) {
+  repeat (50) {
+    instance_create(bbox_left + random(sprite_width - 24), bbox_top + random(sprite_height), FireBubble);
+  }
+  
+  if (audio_is_playing(snd_boss_music)) {
+    audio_stop_sound(snd_boss_music);
+  }
+  
+  instance_destroy();
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="0">
+    <event eventtype="4" ename="FireBubble">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -107,8 +128,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    // Draw to the screen here
-    draw_self();
+            <string>/// Make the lava splash
+if (vspd &gt; 0) {
+  with (other) {
+    speed = random_range(4, 10);
+    direction = random_range(45, 135);
+  }
+}
 </string>
           </argument>
         </arguments>
