@@ -68,6 +68,29 @@
         </arguments>
       </action>
     </event>
+    <event eventtype="4" ename="Boss">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>take_damage();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="4" ename="EnemyBase">
       <action>
         <libid>1</libid>
@@ -181,7 +204,7 @@
           <argument>
             <kind>1</kind>
             <string>    /// Allow player to leave the room
-    if (up) {
+    if (up) &amp;&amp; other.visible {
         y = yprevious; // Avoid the initial jump attempt
         state = exit_state;
         audio_stop_sound(snd_jump);
